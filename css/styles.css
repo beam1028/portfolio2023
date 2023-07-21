@@ -10972,7 +10972,11 @@ section.resume-section .resume-section-content {
   }
 }
 
-
+.box-adobe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .adobe-icon {
   width: 42px;
   height: 42px;
@@ -10996,7 +11000,7 @@ section.resume-section .resume-section-content {
   background-color: #8165D5;
 }
 
-.portfolio-flex {
+.portfolio-flex-text {
   display: flex;
   flex-direction: column;
 }
@@ -11020,8 +11024,17 @@ section.resume-section .resume-section-content {
   opacity: .7;
 }
 @media (max-width: 768px) {
-  .portfolio-flex {
-    height: 280px;
+  .list-inline {
+    display: block;
+  }
+  .box-adobe {
+    display: inline-block;
+  }
+  .adobe-icon {
+    line-height: 42px;
+  }
+  .portfolio-flex-text {
+    height: 350px;
   }
   .portfolio-img img {
     width: 100%;
